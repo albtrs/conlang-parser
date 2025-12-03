@@ -1,0 +1,37 @@
+{
+  "name": "conlang-dict-parser",
+  "version": "0.1.0",
+  "description": "Parser library for custom dictionary format used in conlang dictionary apps",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^2.0.0"
+  },
+  "keywords": [
+    "parser",
+    "dictionary",
+    "conlang",
+    "constructed-language"
+  ],
+  "license": "MIT"
+}
